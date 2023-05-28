@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/userAccConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        tools:context=".ui.activities.edit_account.UserAccountActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/HeaderAU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/titleAU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:text="Account"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/backAU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="371dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Spinner
+            android:id="@+id/fieldAU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:padding="16dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HeaderAU" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/tagAU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:hint="Key words"
+            android:padding="12dp"
+            android:textColor="@color/lightGrayColor"
+
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+
+            app:chipBackground="#D2A2A0A0"
+            app:chipTextColor="#FDFFFFFF"
+            app:flow_maxElementsWrap="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldAU" />
+
+        <Spinner
+            android:id="@+id/educLvlAU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:padding="16dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagAU" />
+
+        <Spinner
+            android:id="@+id/gendreAU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:padding="16dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/educLvlAU" />
+<TextView
+    android:id="@+id/birthdayAU"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="35dp"
+    android:layout_marginTop="22dp"
+    android:layout_marginEnd="35dp"
+    android:background="@drawable/round_label2"
+    android:hint="Date of birth"
+    android:padding="18dp"
+    android:textColor="@color/lightGrayColor"
+    android:textColorHint="@color/lightGrayColor"
+    android:textSize="18dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.25"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/gendreAU" />
+
+        <Spinner
+            android:id="@+id/cityAU"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:padding="18dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdayAU" />
+
+        <Spinner
+            android:id="@+id/countryAU"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_label2"
+            android:padding="18dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toStartOf="@+id/cityAI"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdayAU" />
+
+        <EditText
+            android:id="@+id/emailAU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:ems="10"
+            android:hint="E-mail"
+
+            android:inputType="textEmailAddress"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/countryAU" />
+
+        <EditText
+            android:id="@+id/mobNumAU"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:ems="10"
+
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailAU" />
+
+
+        <Button
+            android:id="@+id/SaveAU"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/purpleColor"
+            android:padding="14dp"
+            android:text="Save changes"
+            android:textColor="@color/whiteColor"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobNumAU"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

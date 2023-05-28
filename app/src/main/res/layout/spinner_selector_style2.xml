@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--mays-->
+<!--      change default spinner text color from black to white and add this file in
+          adapter define here :
+         ArrayAdapter<CharSequence> adapter2= ArrayAdapter.createFromResource(this,R.array.city,R.layout.spinner_selector_style);
+          instead :
+        ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.city,android.R.layout.simple_spinner_item);
+-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:textColor="@color/lightGrayColor"
+    />

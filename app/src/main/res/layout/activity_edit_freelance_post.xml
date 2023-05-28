@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/editfreelanceConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        tools:context=".ui.activities.edit_posts.editFreelancePostActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/editfreelanceHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/efreelancePostTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:text="Edit Post"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ebackTF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="371dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/eAlertTF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:text="Alert ! you can edit the post only once and it remains pending until its content is reviewed again and approved by admin."
+            android:textColor="#C1BFBF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.271"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editfreelanceHeader" />
+
+        <EditText
+            android:id="@+id/epositionTF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:ems="10"
+            android:hint="Position"
+            android:inputType="text"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eAlertTF" />
+
+        <Spinner
+            android:id="@+id/ecategoryTFSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:padding="18dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/epositionTF" />
+
+
+
+        <EditText
+            android:id="@+id/edescriptionTF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine|text"
+            android:nestedScrollingEnabled="false"
+            android:padding="18dp"
+
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ecategoryTFSpinner" />
+
+
+
+        <TextView
+            android:id="@+id/esalaryTF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="Salary"
+            android:textColor="#AFAFAF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edescriptionTF" />
+
+        <EditText
+            android:id="@+id/esalaryToTF"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/round_label2"
+
+            android:ems="10"
+            android:hint="To"
+            android:inputType="number"
+
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/esalaryTF" />
+
+
+        <TextView
+            android:id="@+id/esal-TF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:text="-"
+            android:textColor="#C1BFBF"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/esalaryToTF"
+            app:layout_constraintTop_toBottomOf="@+id/esalaryTF" />
+
+        <EditText
+            android:id="@+id/esalaryFromTF"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+
+            android:background="@drawable/round_label2"
+            android:ems="10"
+
+            android:hint="From"
+            android:inputType="number"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/sal-TJ"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/esalaryTF" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/etagTF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:hint="Key words"
+            android:padding="12dp"
+            android:textColor="@color/lightGrayColor"
+
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+
+            app:chipBackground="#D2A2A0A0"
+            app:chipTextColor  ="#FDFFFFFF"
+            app:flow_maxElementsWrap="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/esalaryFromTF" />
+
+        <Button
+            android:id="@+id/eSaveTF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/purpleColor"
+            android:padding="14dp"
+            android:text="Save Changes"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etagTF"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

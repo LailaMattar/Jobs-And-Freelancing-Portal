@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="My Jobs"
+        android:enabled="true"
+        android:id="@+id/nav_my_jobs"
+        android:icon="@drawable/portfolio" />
+    <item
+        android:title="All Jobs"
+        android:enabled="true"
+        android:id="@+id/nav_all_jobs"
+        android:icon="@drawable/ic_job_seeker" />
+
+    <item
+        android:title="Freelances"
+        android:enabled="true"
+        android:id="@+id/nav_freelance"
+        android:icon="@drawable/ic_freelance"/>
+
+    <item
+        android:title="Services"
+        android:enabled="true"
+        android:id="@+id/nav_services"
+        android:icon="@drawable/ic_global_services"/>
+
+    <item
+        android:title="Profile"
+        android:enabled="true"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_user"/>
+</menu>

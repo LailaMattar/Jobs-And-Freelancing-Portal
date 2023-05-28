@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDED">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/freelancePostConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activities.post_details.FreelancePostActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/freelancePostHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/freelancePostTitle"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="64dp"
+            android:text="UI/UX Designer"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--           -->
+<!--            android:background="@drawable/profile_circle"-->
+<!--            android:backgroundTint="@color/whiteColor"-->
+<!--            -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/freelancePostImageLayout"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="23dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backFp">
+
+            <ImageView
+                android:id="@+id/freelancePostImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/mays" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/userNameFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Mays Al-Khateeb"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toBottomOf="@+id/freelancePostTitle" />
+
+
+        <TextView
+            android:id="@+id/timeFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="13dp"
+            android:drawableStart="@drawable/ic_clock"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/yellowColor"
+            android:text="2 Days ago"
+            android:textColor="@color/yellowColor"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toBottomOf="@+id/userNameFP" />
+
+        <TextView
+            android:id="@+id/categoryFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_categoryy"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/whiteColor"
+            android:text="Design"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toBottomOf="@+id/userNameFP" />
+
+        <TextView
+            android:id="@+id/applicantsFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="7dp"
+            android:drawableStart="@drawable/ic_appliacnt"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/whiteColor"
+            android:shadowColor="#FFFFFF"
+            android:text="57 Applicants"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toBottomOf="@+id/timeFP" />
+
+        <Button
+            android:id="@+id/applyFP"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="Apply"
+            android:textColor="@color/purpleColor"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+            app:layout_constraintTop_toBottomOf="@+id/timeFP"
+            app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/editFP"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="@color/purpleColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/freelancePostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/timeFP"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/sendFP"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/orangeColor"
+            android:drawableTint="@color/whiteColor"
+            android:gravity="center"
+            android:text="Send"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toEndOf="@+id/applyFP"
+            app:layout_constraintTop_toBottomOf="@+id/applicantsFP"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/deleteFP"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/redColor"
+            android:drawableTint="@color/whiteColor"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/whiteColor"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toEndOf="@+id/applyFP"
+            app:layout_constraintTop_toBottomOf="@+id/applicantsFP"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+                android:id="@+id/backFp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="371dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/savedFP"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="30dp"
+                android:tint="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toEndOf="@+id/freelancePostTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_bookmark" />
+
+        <TextView
+            android:id="@+id/appliedFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="29dp"
+            android:text="You have already applied to this post "
+            android:textColor="@color/backgroundColor"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/freelancePostImageLayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/desLayoutFP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/freelancePostHeader">
+
+
+            <TextView
+                android:id="@+id/descriptionFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desTextFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="we are looking for an employee with +5 years of expierience  of UI/UX design ................  \n blblblblba  desdsffsff"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionFP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/salLayoutFP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desLayoutFP">
+
+            <TextView
+                android:id="@+id/salaryFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Salary"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/salTextFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="150000 - 200000 SYP"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salaryFP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kwLayoutFP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salLayoutFP">
+
+            <TextView
+                android:id="@+id/keyWordsFP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Key Words"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tagsFPRecycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keyWordsFP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/repLayoutFP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kwLayoutFP"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/reportFPTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="20dp"
+                android:text="if the opportunity or its content is violating , fraudulent or abusive ,please tell us ."
+                android:textColor="@color/lightGrayColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/reportFPBtn"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+
+                android:layout_marginStart="313dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/redColor"
+                android:drawableTint="@color/whiteColor"
+                android:gravity="center"
+                android:text="Report"
+                android:textColor="@color/whiteColor"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reportFPTxt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

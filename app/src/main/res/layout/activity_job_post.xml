@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDED">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/jobPostConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activities.post_details.JobPostActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/jobPostHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/jobPostTitle"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="64dp"
+                android:text="UI/UX Designer"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jobPostImageLayout"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="23dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/backJp">
+
+                <ImageView
+                    android:id="@+id/jobPostImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/google_logo" />
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/instNameJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Google"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/jobPostTitle" />
+
+            <TextView
+                android:id="@+id/locationJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Damascus - Syria"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/locationJPImage"
+                app:layout_constraintTop_toBottomOf="@+id/jobPostTitle" />
+
+            <ImageView
+                android:id="@+id/verJPImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toEndOf="@+id/instNameJP"
+                app:layout_constraintTop_toBottomOf="@+id/jobPostTitle"
+                app:srcCompat="@drawable/ic_check" />
+
+            <ImageView
+                android:id="@+id/locationJPImage"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:tint="@color/backgroundColor"
+                app:layout_constraintStart_toEndOf="@+id/verJPImage"
+                app:layout_constraintTop_toBottomOf="@+id/jobPostTitle"
+                app:srcCompat="@drawable/ic_placeholder" />
+
+            <TextView
+                android:id="@+id/timeJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/yellowColor"
+                android:text="2 Days ago"
+                android:textColor="@color/yellowColor"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/instNameJP" />
+
+            <TextView
+                android:id="@+id/categoryJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_categoryy"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/whiteColor"
+                android:text="Design"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/locationJP" />
+
+            <TextView
+                android:id="@+id/applicantsJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7dp"
+                android:drawableStart="@drawable/ic_appliacnt"
+                android:drawablePadding="3dp"
+                android:drawableTint="@color/whiteColor"
+                android:shadowColor="#FFFFFF"
+                android:text="57 Applicants"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/timeJP" />
+
+            <Button
+                android:id="@+id/applyJP"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="Apply"
+                android:textColor="@color/purpleColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/timeJP"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/editJP"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="@color/purpleColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/jobPostImageLayout"
+                app:layout_constraintTop_toBottomOf="@+id/timeJP"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/sendJP"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/orangeColor"
+                android:drawableTint="@color/whiteColor"
+                android:gravity="center"
+                android:text="Send"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toEndOf="@+id/applyJP"
+                app:layout_constraintTop_toBottomOf="@+id/applicantsJP"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/deleteJP"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/redColor"
+                android:drawableTint="@color/whiteColor"
+                android:gravity="center"
+                android:text="Delete"
+                android:textColor="@color/whiteColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toEndOf="@+id/applyJP"
+                app:layout_constraintTop_toBottomOf="@+id/applicantsJP"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/backJp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="371dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <ImageView
+                android:id="@+id/savedJP"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="30dp"
+                android:tint="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toEndOf="@+id/jobPostTitle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_bookmark" />
+
+            <TextView
+                android:id="@+id/appliedJP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginBottom="29dp"
+                android:text="You have already applied to this post "
+                android:textColor="@color/backgroundColor"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jobPostImageLayout"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/desLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobPostHeader">
+
+
+            <TextView
+                android:id="@+id/descriptionJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desTextJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="we are looking for an employee with +5 years of expierience  of UI/UX design ................  \n blblblblba  desdsffsff"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionJP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/expLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desLayoutJP">
+
+            <TextView
+                android:id="@+id/experienceJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Required Experience"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/expTextJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="we are looking for an emfefdfdfefef \n efdff \n ldkkmmd \n ployee with +5 years of expierience  of UI/UX design ................  \n blblblblba  desdsffsff"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/experienceJP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/empLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expLayoutJP">
+
+            <TextView
+                android:id="@+id/empTypeJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Employment Type"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/empTextJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="Full-time"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/empTypeJP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/salLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empLayoutJP">
+
+            <TextView
+                android:id="@+id/salaryJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Salary"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/salTextJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine|text"
+                android:text="150000 - 200000 SYP"
+                android:textColor="@color/blackColor"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/salaryJP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kwLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salLayoutJP">
+
+            <TextView
+                android:id="@+id/keyWordsJP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Key Words"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tagsJPRecycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/keyWordsJP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/repLayoutJP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/whiteColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kwLayoutJP"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/reportJPTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="if the opportunity or its content is violating , fraudulent or abusive ,please tell us ."
+                android:textColor="@color/lightGrayColor"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/reportJPBtn"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+
+                android:layout_marginStart="313dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/redColor"
+                android:drawableTint="@color/whiteColor"
+                android:gravity="center"
+                android:text="Report"
+                android:textColor="@color/whiteColor"
+                android:textSize="10dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reportJPTxt" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

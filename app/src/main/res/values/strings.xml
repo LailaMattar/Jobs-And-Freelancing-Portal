@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Jopy</string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember me</string>
+    <string name="test">test</string>
+    <string name="test2">test2</string>
+    <string name="educationLeveeTitle">Education Level</string>
+
+
+    <string name="Edit_CV"><u>Edit CV</u></string>
+    <string name="Ver"><u>Verfiy</u></string>
+
+    /////spinner
+
+    <string-array name="Country">
+        <item>Country</item>
+
+        <item>Syrian Arab Republic</item>
+        <item>Lebanon</item>
+        <item>Jordan</item>
+        <item>Turkey</item>
+        <item>Germany</item>
+        <item>Egypt</item>
+        <item>UK</item>
+        <item>USA</item>
+        <item>UAE</item>
+        <item>KSA</item>
+        <item>RUSSIA</item>
+        <item>FRANCE</item>
+        <item>country</item>
+
+    </string-array>
+
+
+    <string-array name="city">
+        <item>City</item>
+        <item>Damascus</item>
+        <item>beruit</item>
+        <item>aleppo</item>
+        <item>istanbul</item>
+        <item>hamburg</item>
+        <item>cairo</item>
+        <item>hama</item>
+        <item>homs</item>
+        <item>paris</item>
+        <item>saudi</item>
+        <item>daraa</item>
+        <item>lattakia</item>
+        <item>city</item>
+
+    </string-array>
+
+    ////
+
+    <string-array name="gendre">
+        <item>Female</item>
+        <item>Male</item>
+
+    </string-array>
+
+    <string-array name="employmentType">
+        <item>Employment Type</item>
+        <item>Full time</item>
+        <item>Part time</item>
+        <item>Contract</item>
+        <item>Remotely</item>
+
+
+    </string-array>
+
+
+</resources>

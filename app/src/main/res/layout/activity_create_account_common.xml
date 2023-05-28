@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/full_gradient_background">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activities.login_and_createAccount.CreateAccountCommonActivity">
+
+
+          <EditText
+              android:id="@+id/mobileNumber"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="12dp"
+              android:layout_marginEnd="35dp"
+              android:background="@drawable/round_label"
+              android:drawableStart="@drawable/ic_mobile_phone"
+              android:drawablePadding="16dp"
+              android:ems="10"
+
+              android:hint="Mobile Number"
+              android:inputType="phone"
+              android:padding="18dp"
+              android:selectAllOnFocus="false"
+              android:textColor="@color/whiteColor"
+              android:textColorHint="#FFFFFF"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+
+          <Spinner
+              android:id="@+id/citySpinner"
+              android:layout_width="158dp"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="18dp"
+              android:layout_marginEnd="35dp"
+              android:background="@drawable/round_label"
+              android:padding="16dp"
+              android:spinnerMode="dropdown"
+              android:textColor="@android:color/white"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
+
+          <EditText
+              android:id="@+id/confirmPassword"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="12dp"
+              android:layout_marginEnd="35dp"
+              android:background="@drawable/round_label"
+              android:drawableStart="@drawable/ic_key"
+              android:drawablePadding="16dp"
+              android:ems="10"
+              android:hint="Confirm Password"
+              android:inputType="textPassword"
+              android:padding="18dp"
+              android:selectAllOnFocus="false"
+              android:textColor="@color/whiteColor"
+              android:textColorHint="#FFFFFF"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/createPassword" />
+
+          <EditText
+              android:id="@+id/emailCommon"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="35dp"
+              android:background="@drawable/round_label"
+              android:drawableStart="@drawable/ic_email"
+              android:drawablePadding="16dp"
+              android:ems="10"
+              android:hint="E-mail"
+              android:inputType="textEmailAddress"
+              android:padding="18dp"
+              android:selectAllOnFocus="false"
+              android:textColor="@color/whiteColor"
+              android:textColorHint="#FFFFFF"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/signUpTextView" />
+
+          <TextView
+              android:id="@+id/createNewAccountTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="189dp"
+              android:layout_marginTop="50dp"
+              android:layout_marginEnd="165dp"
+              android:text="Create a new account"
+              android:textColor="@color/whiteColor"
+              android:textSize="18sp"
+              android:visibility="gone"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.905"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/JobyName" />
+
+          <TextView
+              android:id="@+id/signUpTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="30dp"
+              android:layout_marginTop="25dp"
+              android:text="Sign Up !"
+              android:textColor="@color/whiteColor"
+              android:textSize="30sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/createNewAccountTextView" />
+
+
+          <Spinner
+              android:id="@+id/countrySpinner"
+              android:layout_width="158dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="18dp"
+              android:background="@drawable/round_label"
+              android:padding="16dp"
+              android:popupElevation="0px"
+              android:spinnerMode="dropdown"
+              app:layout_constraintEnd_toStartOf="@+id/citySpinner"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
+
+          <EditText
+              android:id="@+id/createPassword"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="11dp"
+              android:layout_marginEnd="35dp"
+              android:background="@drawable/round_label"
+              android:drawableStart="@drawable/ic_key"
+              android:drawablePadding="16dp"
+              android:ems="10"
+              android:hint="Create Password"
+              android:inputType="textPassword"
+              android:padding="18dp"
+              android:selectAllOnFocus="false"
+              android:textColor="@color/whiteColor"
+              android:textColorHint="#FFFFFF"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/emailCommon" />
+
+          <Button
+              android:id="@+id/nextCommon"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="35dp"
+              android:layout_marginTop="40dp"
+              android:layout_marginEnd="35dp"
+              android:layout_marginBottom="20dp"
+              android:background="@drawable/round_button"
+              android:padding="14dp"
+              android:text="Next"
+              android:textColor="@color/purpleColor"
+              android:textSize="22sp"
+              android:textStyle="normal"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/countrySpinner" />
+
+          <TextView
+              android:id="@+id/JobyName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              android:text="JOBY"
+              android:textColor="@color/white"
+              android:textSize="40dp"
+              android:textStyle="bold"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:fontFamily="@font/segoepr"/>
+
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </ScrollView>

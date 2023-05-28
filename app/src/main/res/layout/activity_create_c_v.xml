@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/full_gradient_background">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".ui.activities.login_and_createAccount.CreateCVActivity">
+
+
+    <Button
+        android:id="@+id/skipCV"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_button"
+        android:padding="14dp"
+        android:text="Skip"
+        android:textColor="@color/purpleColor"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillsCV" />
+
+    <EditText
+        android:id="@+id/skillsCV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_label"
+        android:drawableStart="@drawable/ic_skill"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Skills"
+        android:inputType="textMultiLine|text"
+        android:padding="18dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coursesCV" />
+
+    <EditText
+        android:id="@+id/workExperiencesCV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_label"
+        android:drawableStart="@drawable/work"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Work Experiences"
+        android:inputType="textMultiLine|text"
+        android:padding="18dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/educationCv" />
+
+    <EditText
+        android:id="@+id/educationCv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_label"
+        android:drawableStart="@drawable/ic_graduation_cap"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Education Level"
+        android:inputType="textMultiLine|text"
+        android:nestedScrollingEnabled="false"
+        android:padding="18dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createCvText" />
+
+    <EditText
+        android:id="@+id/coursesCV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_label"
+        android:drawableStart="@drawable/ic_online_course"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Courses"
+        android:inputType="textMultiLine|text"
+        android:padding="18dp"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languagesCV" />
+
+    <Button
+        android:id="@+id/finishCV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_button"
+        android:padding="14dp"
+        android:text="Finish"
+        android:textColor="@color/purpleColor"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillsCV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/createCvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="35dp"
+        android:text="Create your own CV!"
+        android:textColor="@color/whiteColor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/languagesCV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/round_label"
+        android:drawableStart="@drawable/ic_pen"
+        android:drawablePadding="16dp"
+        android:hint="Languages"
+        android:padding="18dp"
+        android:textColor="@color/whiteColor"
+        android:textColorHint="@color/whiteColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workExperiencesCV" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

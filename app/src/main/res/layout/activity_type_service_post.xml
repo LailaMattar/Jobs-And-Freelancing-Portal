@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/TypeserviceConstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        tools:context=".ui.activities.type_post.TypeServicePostActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/TypeserviceHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/servicePostTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:text="Post Service"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/backTS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="371dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/titleTS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:ems="10"
+            android:hint="Tilte"
+            android:inputType="text"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TypeserviceHeader" />
+
+        <Spinner
+            android:id="@+id/categoryTSSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:padding="18dp"
+            android:popupElevation="0px"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTS" />
+
+
+
+        <EditText
+            android:id="@+id/descriptionTS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine|text"
+            android:nestedScrollingEnabled="false"
+            android:padding="18dp"
+
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryTSSpinner" />
+
+        <EditText
+            android:id="@+id/priceTS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:ems="10"
+            android:hint="Price (S.P)"
+            android:inputType="number"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTS" />
+
+        <EditText
+            android:id="@+id/deliveryTS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+            android:ems="10"
+            android:hint="Terms of delivery (e.g: 2 Days)"
+            android:inputType="text"
+            android:padding="18dp"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/lightGrayColor"
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceTS" />
+
+        <com.hootsuite.nachos.NachoTextView
+            android:id="@+id/tagTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/round_label2"
+
+            android:hint="Key words"
+            android:padding="12dp"
+            android:textColor="@color/lightGrayColor"
+
+            android:textColorHint="@color/lightGrayColor"
+            android:textSize="16dp"
+
+            app:chipBackground="#D2A2A0A0"
+            app:chipTextColor  ="#FDFFFFFF"
+            app:flow_maxElementsWrap="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deliveryTS" />
+
+
+        <TextView
+            android:id="@+id/uploadPicTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="Upload a picture descriping your Service "
+            android:textColor="#AFAFAF"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.025"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagTS" />
+
+        <Button
+            android:id="@+id/chooseImageTS"
+            android:layout_width="71dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="228dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/purpleColor"
+            android:padding="14dp"
+            android:text="Upload"
+            android:textColor="@color/whiteColor"
+            android:textSize="10dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadPicTS" />
+
+        <ImageView
+            android:id="@+id/ImageTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chooseImageTS"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+
+        <Button
+            android:id="@+id/postTS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="75dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/purpleColor"
+            android:padding="14dp"
+            android:text="Post"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImageTS"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
